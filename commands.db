@@ -30,3 +30,12 @@ CREATE TABLE comments(
 );
 
 INSERT INTO users(name,email,password, gender) VALUES('Peter', 'test@gmail.com', 'Pp12345', 0);
+
+
+CREATE TABLE product(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    price INT(15) NOT NULL,
+    quantity INT(20) NOT NULL
+);
