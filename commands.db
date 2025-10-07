@@ -40,7 +40,7 @@ CREATE TABLE product(
     quantity INT(20) NOT NULL
 );
 
-CREATE TABLE oders(
+CREATE TABLE orders(
     id INT AUTO_INCREMENT PRIMARY KEY,
     product_id INT NOT NULL,
     product_name VARCHAR(255) NOT NULL,
@@ -60,3 +60,10 @@ INSERT INTO users(name,email,password, gender) VALUES('test', 'test@gmail.com', 
 INSERT INTO product(title, description, price, quantity) VALUES('Phone', 'This is an iphone 17 pro', 1500, 24);
 
 INSERT INTO orders(product_id, user_id, quantity, total_price) VALUES(4, 2, 1, 8000);
+
+ALTER TABLE orders
+DROP COLUMN product_name;
+
+
+ALTER TABLE orders
+ADD COLUMN order_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP BEFORE status;
