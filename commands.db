@@ -58,3 +58,5 @@ CREATE TABLE oders(
 INSERT INTO users(name,email,password, gender) VALUES('test', 'test@gmail.com', 'test', 'male');
 
 INSERT INTO product(title, description, price, quantity) VALUES('Phone', 'This is an iphone 17 pro', 1500, 24);
+
+INSERT INTO orders(product_id, user_id, quantity, total_price) VALUES(4, 2, 1, 8000);
