@@ -75,6 +75,11 @@ ADD COLUMN order_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP BEFORE status;
 
 
 
+
+
+
+
+
 INSERT INTO users(full_name,email,password,role) VALUES('Mr musa malo','test@gmail.com','test1','instructor');
 
 INSERT INTO users(full_name,email,password, role) VALUES('Student2','student2@gmail.com','test4', 'student');
