@@ -50,5 +50,9 @@ CREATE TABLE oders(
     status ENUM("Pending", "Processed") DEFAULT "Pending",
     
     FOREIGN KEY (product_id) REFERENCES product(id),
-    FOREIGN KEY (user_id) REFERENCES users(id)
+    FOREIGN KEY (user_id) REFERENCES users(id),
+
 );
+
+
+INSERT INTO users(name,email,password, gender) VALUES('test', 'test@gmail.com', 'test', 'male');
